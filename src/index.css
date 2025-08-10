@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* Misty neutrals */
+  --color-mist-50:  #f7faf9;
+  --color-mist-100: #eef2f4;
+  --color-mist-200: #ece3e8;
+  --color-mist-300: #cfe0d7;
+  --color-mist-400: #b9cfc4;
+  --color-mist-500: #9fb7ab;
+  --color-mist-600: #7f978d;
+  --color-mist-700: #677c74;
+  --color-mist-800: #53645f;
+  --color-mist-900: #465450;
+  /* Forest moss */
+  --color-moss-50: #faf4fa;
+  --color-moss-100: #e6f4e8;
+  --color-moss-200: #cbe7d0;
+  --color-moss-300: #a7d3b0;
+  --color-moss-400: #7bbd8c;
+  --color-moss-500: #4fa66a;
+  --color-moss-600: #3e8555;
+  --color-moss-700: #346c46;
+  --color-moss-800: #2c583b;
+  --color-moss-900: #244a32;
+  /* Ocean teal */
+  --color-ocean-50: #effaf9;
+  --color-ocean-100: #d7f4f0;
+  --color-ocean-200: #b2e8e0;
+  --color-ocean-300: #83d6cb;
+  --color-ocean-400: #4dbdb1;
+  --color-ocean-500: #1e9e95;
+  --color-ocean-600: #177c77;
+  --color-ocean-700: #156361;
+  --color-ocean-800: #134f4e;
+  --color-ocean-900: #113f40;
+  /* Big sky blues */
+  --color-skyx-50: #f5fbff;
+  --color-skyx-100: #e6f5ff;
+  --color-skyx-200: #cdeaff;
+  --color-skyx-300: #a8dbff;
+  --color-skyx-400: #7ec7ff;
+  --color-skyx-500: #52adf5;
+  --color-skyx-600: #3a8ed6;
+  --color-skyx-700: #2e72af;
+  --color-skyx-800: #285e8e;
+  --color-skyx-900: #244e75;
+  /* Sakura pinks */
+  --color-sakura-50: #fff5f7;
+  --color-sakura-100: #ffe7ed;
+  --color-sakura-200: #ffcbd8;
+  --color-sakura-300: #ffa6bd;
+  --color-sakura-400: #ff7aa0;
+  --color-sakura-500: #f55389;
+  --color-sakura-600: #d43873;
+  --color-sakura-700: #b12a5f;
+  --color-sakura-800: #8f234e;
+  --color-sakura-900: #741f42;
+  /* Tea / wood browns */
+  --color-tea-50: #faf7f2;
+  --color-tea-100: #f5eee1;
+  --color-tea-200: #eadcc1;
+  --color-tea-300: #dcc59a;
+  --color-tea-400: #c9a56e;
+  --color-tea-500: #b2874a;
+  --color-tea-600: #946a38;
+  --color-tea-700: #78542f;
+  --color-tea-800: #62452a;
+  --color-tea-900: #523a25;
+  /* Soot neutrals and ink */
+  --color-soot-50: #f6f6f7;
+  --color-soot-100: #e9eaec;
+  --color-soot-200: #d4d6db;
+  --color-soot-300: #b5b9c2;
+  --color-soot-400: #8f95a1;
+  --color-soot-500: #6b7280;
+  --color-soot-600: #545b67;
+  --color-soot-700: #444952;
+  --color-soot-800: #393e45;
+  --color-soot-900: #2f3439;
+  --color-ink: #0b1117;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --card-bg: rgba(243, 144, 184, 0.833);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sakura-500);
+  outline-offset: 2px;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Zen Maru Gothic', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply p-4 rounded-xl shadow border border-mist-200 hover:shadow-md transition;
+    background: var(--card-bg);
+  }
+}
